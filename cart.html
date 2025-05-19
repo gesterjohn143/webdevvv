@@ -31,8 +31,12 @@
 			<div class="header_content ml-auto">
 				<div class="search header_search">
 					<form action="#">
-						<input type="search" class="search_input" required="required">
-						<button type="submit" id="search_button" class="search_button"><img src="images/magnifying-glass.svg" alt=""></button>
+						<label for="search_input" class="sr-only">Search</label>
+						<input id="search_input" type="search" class="search_input" required="required" placeholder="Search" title="Search">
+						<button type="submit" id="search_button" class="search_button" title="Search">
+							<span class="sr-only">Search</span>
+							<img src="images/magnifying-glass.svg" alt="Search">
+						</button>
 					</form>
 				</div>
 				<div class="shopping">
@@ -78,8 +82,12 @@
 		<div class="logo menu_mm"><a href="#">Wish</a></div>
 		<div class="search">
 			<form action="#">
-				<input type="search" class="search_input menu_mm" required="required">
-				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt=""></button>
+				<label for="search_input_menu" class="sr-only">Search</label>
+				<input id="search_input_menu" type="search" class="search_input menu_mm" required="required" placeholder="Search" title="Search">
+				<button type="submit" id="search_button_menu" class="search_button menu_mm" title="Search">
+					<span class="sr-only">Search</span>
+					<img class="menu_mm" src="images/magnifying-glass.svg" alt="Search">
+				</button>
 			</form>
 		</div>
 		<nav class="menu_nav">
@@ -156,7 +164,8 @@
 										<!-- Product Quantity -->
 										<div class="product_quantity_container">
 											<div class="product_quantity clearfix">
-												<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+												<label for="quantity_input" class="sr-only">Quantity</label>
+												<input id="quantity_input" type="text" pattern="[0-9]*" value="1" placeholder="Quantity" title="Enter quantity">
 												<div class="quantity_buttons">
 													<div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
 													<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
@@ -167,7 +176,10 @@
 										<div class="cart_product_total">$35.00</div>
 										<!-- Product Cart Trash Button -->
 										<div class="cart_product_button">
-											<button class="cart_product_remove"><img src="images/trash.png" alt=""></button>
+											<button type="button" class="cart_product_remove" title="Remove item">
+												<span class="sr-only">Remove item</span>
+												<img src="images/trash.png" alt="Remove">
+											</button>
 										</div>
 									</div>
 								</div>
